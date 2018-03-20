@@ -1,0 +1,20 @@
+.menu-logo .navbar-brand .navbar-logo a img, {
+    width: 200%
+}
+.red-Kilburn-Background {
+    background-image: url('../images/img-5628-2000x2666.jpg');
+    height: 400px;
+}
+.align-button {
+    margin-top: -100px;
+}
+.btn-primary, .btn-primary:active {
+    background-color: #663399 !important;
+    border-color: #663399 !important;
+    color: #ffffff !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary.active {
+    color: #ffffff !important;
+    background-color: #3D1E5B !important;
+    border-color: #3D1E5B !important;
+}
