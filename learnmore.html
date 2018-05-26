@@ -9,6 +9,11 @@
         <link rel="shortcut icon" href="assets/images/brent-logo-842x595.png" type="image/x-icon">
         <meta name="description" content="Web Site Creator Description">
         <title>Kilburn - Learn more</title>
+        <style>#galleria {
+            width: 800px;
+            height: 500px;
+        }
+        </style>
         <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
         <link rel="stylesheet" href="assets/tether/tether.min.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -18,10 +23,6 @@
         <link href="assets/fonts/style.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
         <link rel="stylesheet" href="assets/external/stylesheet.css" type="text/css">
-        <style>#galleria {
-    width: 800px;
-    height: 500px;
-}</style>
     </head>
     <body>
         <section class="menu cid-qJK1EKLqSH" once="menu" id="menu1-w">
@@ -75,7 +76,7 @@
         </section>
         <section class="mbr-section info1 cid-qJKa4v0b9i" id="info1-10">
 </section>
-        <section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11">
+        <section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11" style="background-image: url('assets/images/back1.jpg');background-size: 100% 100%;">
             <div class="container" id="history-container">
                 <div class="container">
                     <div class="row justify-content-center content-row">
@@ -83,7 +84,7 @@
                             <h2 class="align-left mbr-bold mbr-fonts-style display-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;History of Kilburn</h2>
                         </div>
                         <div class="media-container-column col-12 col-lg-3 col-md-4">
-</div>
+                        </div>
                     </div>
                 </div>
                 <div class="media-container-row">
@@ -91,7 +92,7 @@
                         <div class="media-container-row">
                             <div class="media-content">
                                 <div class="mbr-section-text">
-                                    <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">Kilburn is an area of northwest London, England, located 3.75 miles north-west of Charing Cross. A small section of the area is located within the City of Westminster  The town of Kilburn has its origins in a 12th-century priory on the banks of the Kilburn Brook. Kilburn today is a vibrant area and multicultural London district. Furthermore it is one of the capital's highest Irish populations, as well as a sizable Afro-Caribbean population. The area is one of 35 major centres in Greater London<br><br></p>
+                                    <p class="mbr-text align-right mb-0 mbr-fonts-style display-7" style="opacity: 1.0">Kilburn is an area of northwest London, England, located 3.75 miles north-west of Charing Cross. A small section of the area is located within the City of Westminster  The town of Kilburn has its origins in a 12th-century priory on the banks of the Kilburn Brook. Kilburn today is a vibrant area and multicultural London district. Furthermore it is one of the capital's highest Irish populations, as well as a sizable Afro-Caribbean population. The area is one of 35 major centres in Greater London<br><br></p>
                                 </div>
                             </div>
                             <div class="mbr-figure" style="width: 110%;">
@@ -102,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="mbr-section info1 cid-qJKhzssx39" id="info1-14">
+        <section class="mbr-section info1 cid-qJKhzssx39" id="info1-14" style="background-image: url('assets/images/back1.jpg')">
             <div class="container" id="gallery-container">
                 <div class="row justify-content-center content-row">
                     <div class="media-container-column title col-12 col-lg-7 col-md-6">
@@ -179,14 +180,19 @@
         Galleria.run('#galleria');
     });
         $( document ).ready(function() {
+          $('#info-1-14').hide()
           $("#gallery-container").hide();
             $("a#historyToggle").click(function() {
                 $("#gallery-container").hide();
+                $("#content7-11").css("background-size", "100% 100%")
+                $('#info-1-14').hide()
                 $("#history-container").show("blind");
             });
 
             $("a#galleryToggle").click(function() {
                 $("#history-container").hide()
+                $("#info-1-14").css("background-size", "100% 100%")
+                $("#content7-11").css("background-size", "0%")
                 $("#gallery-container").show("blind");
             });
         }
