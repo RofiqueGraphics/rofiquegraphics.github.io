@@ -69,8 +69,6 @@
                 <a class="btn btn-md btn-primary display-4" id="sceneryToggle">Scenery</a>
             </div>
         </section>
-        <section class="mbr-section info1 cid-qJKa4v0b9i" id="info1-10">
-</section>
         <section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11" style="background-image: url('assets/images/back4.jpg'); background-size: 100% 100%">
             <div class="container" id="activities-container">
                 <div class="container">
@@ -131,8 +129,6 @@
                 </div>
             </div>
         </section>
-        <section class="carousel slide cid-qJKeJfjoyv" data-interval="false" id="slider2-12">
-</section>
         <section once="" class="cid-qJK3TpoirS" id="footer6-p">
             <div class="container">
                 <div class="media-container-row align-center mbr-white">
@@ -157,14 +153,19 @@
         <script src="assets/slidervideo/script.js"></script>
         <script>
         $( document ).ready(function() {
+          $(".cid-qJKhzssx39").hide();
           $("#scenery-container").hide();
             $("a#activitiesToggle").click(function() {
                 $("#scenery-container").hide();
+                $(".cid-qJKhzssx39").hide();
+                $(".cid-qJKdPUJCIG").show()
                 $("#activities-container").show("blind");
             });
 
             $("a#sceneryToggle").click(function() {
                 $("#activities-container").hide()
+                $(".cid-qJKdPUJCIG").hide()
+                $(".cid-qJKhzssx39").show();
                 $("#scenery-container").show("blind");
             });
         }

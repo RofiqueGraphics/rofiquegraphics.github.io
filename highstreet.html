@@ -60,15 +60,8 @@
             <a class="btn btn-md btn-primary display-4" id="foodToggle">Food</a>
             <a class="btn btn-md btn-primary display-4" id="shoppingToggle">Shopping</a>
     </div>
-</section>
-<section class="mbr-section info1 cid-qJKa4v0b9i" id="info1-10">
-
-    
-
-    
-</section>
-
-<section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11" style="background-image: url('assets/images/back3.jpg');">
+</section>  
+<section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11" style="background-image: url('assets/images/back1.jpg');">
           
     
 
@@ -107,7 +100,7 @@
     </div>
 </section>
 
-<section class="mbr-section info1 cid-qJKhzssx39" id="info1-14" style="background-image: url('assets/images/back3.jpg');">
+<section class="mbr-section info1 cid-qJKhzssx39" id="info1-14" style="background-image: url('assets/images/back1.jpg');">
 
     
 
@@ -150,10 +143,6 @@
         </div>
     </div>
 </section>
-
-<section class="carousel slide cid-qJKeJfjoyv" data-interval="false" id="slider2-12">
-</section>
-
 <section once="" class="cid-qJK3TpoirS" id="footer6-p">
     <div class="container">
         <div class="media-container-row align-center mbr-white">
@@ -183,13 +172,18 @@
   <script>
         $( document ).ready(function() {
           $("#shopping-container").hide();
+          $(".cid-qJKhzssx39").hide();
             $("a#foodToggle").click(function() {
+                $(".cid-qJKhzssx39").hide();
                 $("#shopping-container").hide();
+                $(".cid-qJKdPUJCIG").show();
                 $("#food-container").show("blind");
             });
 
             $("a#shoppingToggle").click(function() {
                 $("#food-container").hide()
+                $(".cid-qJKdPUJCIG").hide();
+                $(".cid-qJKhzssx39").show();
                 $("#shopping-container").show("blind");
             });
         }

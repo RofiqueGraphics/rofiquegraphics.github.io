@@ -74,9 +74,8 @@
                 <a class="btn btn-md btn-primary display-4" id="galleryToggle">Gallery</a>
             </div>
         </section>
-        <section class="mbr-section info1 cid-qJKa4v0b9i" id="info1-10">
 </section>
-        <section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11" style="background-image: url('assets/images/back1.jpg');background-size: 100% 100%;">
+        <section class="mbr-section content7 cid-qJKdPUJCIG" id="content7-11" style="background-image:url('assets/images/back3.jpg')">
             <div class="container" id="history-container">
                 <div class="container">
                     <div class="row justify-content-center content-row">
@@ -103,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="mbr-section info1 cid-qJKhzssx39" id="info1-14" style="background-image: url('assets/images/back1.jpg')">
+        <section class="mbr-section info1 cid-qJKhzssx39" id="info1-14" style="background-image: url('assets/images/back3.jpg')">
             <div class="container" id="gallery-container">
                 <div class="row justify-content-center content-row">
                     <div class="media-container-column title col-12 col-lg-7 col-md-6">
@@ -145,7 +144,6 @@
                 </div>
             </div>
         </section>
-        <section class="carousel slide cid-qJKeJfjoyv" data-interval="false" id="slider2-12">
 </section>
         <section once="" class="cid-qJK3TpoirS" id="footer6-p">
             <div class="container">
@@ -182,17 +180,19 @@
         $( document ).ready(function() {
           $('#info-1-14').hide()
           $("#gallery-container").hide();
+          $(".cid-qJKhzssx39").hide();
             $("a#historyToggle").click(function() {
                 $("#gallery-container").hide();
-                $("#content7-11").css("background-size", "100% 100%")
+                $(".cid-qJKdPUJCIG").show()
+                $(".cid-qJKhzssx39").hide();
                 $('#info-1-14').hide()
                 $("#history-container").show("blind");
             });
 
             $("a#galleryToggle").click(function() {
                 $("#history-container").hide()
-                $("#info-1-14").css("background-size", "100% 100%")
-                $("#content7-11").css("background-size", "0%")
+                $(".cid-qJKdPUJCIG").hide()
+                $(".cid-qJKhzssx39").show();
                 $("#gallery-container").show("blind");
             });
         }
